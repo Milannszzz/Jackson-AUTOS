@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson's Autos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h1>Jackson's Autos</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h2>Drive Your Dream Car Today</h2>
+        <p>Affordable, Reliable, and Verified Cars in Lagos</p>
+        <a href="#cars" class="btn">View Cars</a>
+    </section>
+
+    <!-- CARS -->
+    <section id="cars" class="cars">
+        <h2>Available Cars</h2>
+
+        <div class="car-list">
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200" alt="Car">
+                <h3>Toyota Camry 2018</h3>
+                <p>₦8,500,000</p>
+                <button onclick="contact()">Contact Seller</button>
+            </div>
+
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200" alt="Car">
+                <h3>Honda Accord 2017</h3>
+                <p>₦7,200,000</p>
+                <button onclick="contact()">Contact Seller</button>
+            </div>
+
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200" alt="Car">
+                <h3>Lexus RX 350 2016</h3>
+                <p>₦12,000,000</p>
+                <button onclick="contact()">Contact Seller</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Jackson's Autos</h2>
+        <p>
+            At Jackson's Autos, we specialize in providing high-quality vehicles at affordable prices.
+            With years of experience in the automobile industry, we ensure all our cars are inspected,
+            verified, and ready for the road.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +234 812 345 6789</p>
+        <p><strong>Email:</strong> jacksonsautos@gmail.com</p>
+        <p><strong>Address:</strong> 12 Allen Avenue, Ikeja, Lagos</p>
+
+        <a href="https://wa.me/2348123456789" class="btn">Chat on WhatsApp</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Jackson's Autos. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function contact() {
+            alert("Call: +234 812 345 6789 or WhatsApp us!");
+        }
+    </script>
+
+</body>
+</html>
