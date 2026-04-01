@@ -2,106 +2,180 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f5f5f5;
+    background: #0d0d0d;
+    color: white;
 }
 
 /* NAVBAR */
 header {
-    background: #111;
-    color: white;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 header nav a {
-    color: white;
-    margin-left: 20px;
+    color: #ccc;
+    margin-left: 25px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: white;
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('https://via.placeholder.com/1200x500') center/cover;
-    color: white;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+                url('https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1600') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 20px;
+
+    animation: fadeIn 2s ease-in;
 }
 
 .hero h2 {
-    font-size: 42px;
-    font-weight: bold;
+    font-size: 55px;
+    font-weight: 700;
 }
 
 .hero p {
+    margin-top: 15px;
     font-size: 18px;
-    margin-top: 10px;
+    color: #bbb;
 }
+
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: red;
-    color: white;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, #ff0000, #990000);
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 /* CARS */
 .cars {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+.cars h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 .car-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
 .car {
-    background: white;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
     padding: 15px;
-    width: 250px;
-    border-radius: 10px;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.car:hover {
+    transform: translateY(-10px);
 }
 
 .car img {
     width: 100%;
+    border-radius: 10px;
+}
+
+.car h3 {
+    margin-top: 10px;
+}
+
+.car p {
+    color: #bbb;
 }
 
 .car button {
     margin-top: 10px;
     padding: 10px;
-    background: black;
-    color: white;
+    width: 100%;
+    border-radius: 20px;
     border: none;
+    background: #ff0000;
+    color: white;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.car button:hover {
+    background: #cc0000;
 }
 
 /* ABOUT */
 .about {
-    padding: 40px;
-    background: #fff;
+    padding: 60px 20px;
     text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.about p {
+    color: #bbb;
+    margin-top: 10px;
 }
 
 /* CONTACT */
 .contact {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+    color: #bbb;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
-    color: white;
+    background: #000;
+    padding: 15px;
     text-align: center;
-    padding: 10px;
+    color: #888;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
