@@ -26,7 +26,8 @@ header nav a {
 
 /* HERO */
 .hero {
-    background: url('https://via.placeholder.com/1200x500') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://via.placeholder.com/1200x500') center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
